@@ -49,6 +49,6 @@ def recommend_genre_and_songs(song_filename):
         print(f"Error: The song '{song_filename}' is not found in the dataset.")
 
 # Example usage
-song_filename = 'jazz.00063.9.wav'  # Replace this with the actual song filename you want to recommend
+song_filename = 'pop.00003.5.wav'  # Replace this with the actual song filename you want to recommend
 recommend_genre_and_songs(song_filename)
 

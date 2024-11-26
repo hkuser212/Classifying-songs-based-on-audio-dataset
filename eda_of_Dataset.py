@@ -25,7 +25,11 @@ plt.title('bpm boxplot of genres')
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.savefig('bpm boxplot of genres.png')
-
+# correlation matrix for mean variable
+corr = df.corr()
+sns.heatmap(corr, cmap = 'RdBu_r', vmin = -1, vmax = 1, annot = True)
+plt.title('Correlation matrix for mean variable')
+plt.savefig('Correlation matrix for mean variable.png')
 # PCA analysis on genres
 data = df.iloc[0:,1:]
 y = data['label']
